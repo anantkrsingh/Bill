@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.Invoicing">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/parentINV">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/parentTodayInv"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drop_down_menu"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Invoices"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:textColor="?attr/colorOnSurface"/>
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:id="@+id/drop_down_arrow"
+                android:src="@drawable/ic_arrow_drop_down"
+                app:tint="?attr/colorOnSurface" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/drop_down_menu"
+            android:layout_marginTop="5dp"
+            android:id="@+id/divider"
+            android:background="?attr/colorOnSurface"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:id="@+id/todayRV"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorOnSurface"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/parentAllInv"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/drop_down_menu_another"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="All Invoices"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/drop_down_arrow_another"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_arrow_drop_down"
+                app:tint="?attr/colorOnSurface" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/drop_down_menu_another"
+            android:layout_marginTop="5dp"
+            android:id="@+id/divider_another"
+            android:background="?attr/colorOnSurface"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allInvRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_another"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="0dp" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

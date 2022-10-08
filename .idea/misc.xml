@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Bill/app/src/main/res/drawable/card_bg.xml" value="0.137" />
+        <entry key="..\:/Bill/app/src/main/res/drawable/edit_button_bg.xml" value="0.137" />
+        <entry key="..\:/Bill/app/src/main/res/drawable/invoices_items_bg.xml" value="0.137" />
+        <entry key="..\:/Bill/app/src/main/res/drawable/proceed_btn_bg.xml" value="0.125" />
+        <entry key="..\:/Bill/app/src/main/res/drawable/shop_cat_bg.xml" value="0.125" />
+        <entry key="..\:/Bill/app/src/main/res/drawable/shop_info_bg.xml" value="0.125" />
+        <entry key="..\:/Bill/app/src/main/res/drawable/small_btn_bg.xml" value="0.125" />
+        <entry key="..\:/Bill/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Bill/app/src/main/res/layout/activity_new_invoice.xml" value="0.1" />
+        <entry key="..\:/Bill/app/src/main/res/layout/activity_new_invoice2.xml" value="0.16540084388185655" />
+        <entry key="..\:/Bill/app/src/main/res/layout/fragment_dashboard.xml" value="0.5" />
+        <entry key="..\:/Bill/app/src/main/res/layout/fragment_invoicing.xml" value="0.22" />
+        <entry key="..\:/Bill/app/src/main/res/layout/fragment_shop_info.xml" value="0.22" />
+        <entry key="..\:/Bill/app/src/main/res/layout/invoice_items.xml" value="0.25" />
+        <entry key="..\:/Bill/app/src/main/res/menu/bottom_navigation.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
