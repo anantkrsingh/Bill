@@ -15,7 +15,6 @@
             app:titleTextColor="?attr/colorPrimaryContainer"
             android:id="@+id/toolbarNewInv"/>
     </com.google.android.material.appbar.AppBarLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,6 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Customer Name"
+                    android:id="@+id/customerName"
                     android:layout_marginLeft="60dp"
                     android:textColorHint="?attr/colorOnTertiaryContainer"
                     android:padding="10dp"
@@ -57,7 +57,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:id="@+id/purchasedItemsRV"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,6 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
+                    android:id="@+id/addProduct"
                     android:layout_marginRight="20dp"
                     android:clickable="true"
                     android:focusable="true"
@@ -114,11 +116,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="MRP : " />
+                            android:text="MRP :RS" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="RS 180"
+                            android:text="180"
+                            android:id="@+id/MRP"
                             android:layout_marginLeft="8dp" />
                     </LinearLayout>
                     <LinearLayout
@@ -130,11 +133,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="PRICE : " />
+                            android:text="PRICE :RS" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="RS 150"
+                            android:text="150"
+                            android:id="@+id/sellingPrice"
                             android:layout_marginLeft="8dp"
                             />
                     </LinearLayout>
@@ -147,12 +151,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="DISCOUNT : "
+                            android:text="DISCOUNT% :"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="20%"
+                            android:text="20"
+                            android:id="@+id/discountPercent"
                             android:layout_marginLeft="8dp"
                             />
                     </LinearLayout>
@@ -203,6 +208,7 @@
                     android:textColorHint="?attr/colorOnTertiaryContainer"
                     android:padding="10dp"
                     android:textColor="?attr/colorOnTertiaryContainer"
+                    android:id="@+id/spinnerPaymentMethod"
                     android:background="@drawable/shop_info_bg"/>
             </LinearLayout>
         </LinearLayout>
@@ -227,14 +233,16 @@
                 android:paddingEnd="60dp"
                 android:background="@android:color/transparent"
                 android:textColor="?attr/colorOnPrimaryContainer"
+                android:id="@+id/draftInvoice"
                 android:text="Draft"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingStart="60dp"
                 android:paddingEnd="60dp"
                 android:background="@drawable/proceed_btn_bg"
+                android:id="@+id/addInvoice"
                 android:text="Proceed"/>
         </LinearLayout>
     </com.google.android.material.bottomappbar.BottomAppBar>

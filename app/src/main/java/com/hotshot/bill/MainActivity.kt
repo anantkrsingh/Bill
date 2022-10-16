@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.hotshot.bill.Fragments.Dashboard
 import com.hotshot.bill.Fragments.Invoicing
 import com.hotshot.bill.Fragments.ShopInfo
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
             return@setOnItemSelectedListener true
         }
+        FirebaseAnalytics.getInstance(this)
         binding.fabNewInv.setOnClickListener(View.OnClickListener {
             val intent = Intent(this,NewInvoice::class.java)
             startActivity(intent)
