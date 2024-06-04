@@ -1,10 +1,17 @@
 package com.hotshot.bill
 
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.pdf.PdfDocument
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
+import androidx.compose.foundation.pager.PageSize
 import androidx.fragment.app.Fragment
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
@@ -16,6 +23,8 @@ import com.hotshot.bill.Fragments.ShopInfo
 import com.hotshot.bill.Model.ProductData
 import com.hotshot.bill.Utils.FirestoreHelper
 import com.hotshot.bill.databinding.ActivityMainBinding
+import java.io.File
+import java.io.FileOutputStream
 
 class MainActivity : AppCompatActivity() {
     companion object{
@@ -27,7 +36,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setFragment(Dashboard())
+        generatePdf()
+//        setFragment(Dashboard())
         binding.bottomNav.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.dashboard -> setFragment(Dashboard())
@@ -73,7 +83,4 @@ class MainActivity : AppCompatActivity() {
 
             })
     }
-
-
-
 }

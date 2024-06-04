@@ -11,4 +11,25 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="shop_name">codingBlaze</string>
+    <string name="address1">Address Line 1</string>
+    <string name="landmark">Near a Youtube video</string>
+    <string name="stateZIP">Youtube 7070</string>
+    <string name="partyName">Party: Subscriber</string>
+    <string name="invoice_id">Invoice: 001</string>
+    <string name="date">04-Jan-2023</string>
+    <string name="phoneNo">+91 0000000000</string>
+    <string name="type">Purchase/Delivery</string>
+    <string name="time">20:21:56</string>
+    <string name="index">0. </string>
+    <string name="itemName">Item Name</string>
+    <string name="price">129.00</string>
+    <string name="subTotal">Sub Total: </string>
+    <string name="gst">GST:   @18%</string>
+    <string name="amountDue">AMOUNT DUE: </string>
+    <string name="paymentMethod">Payment CASH/CARD: </string>
+    <string name="subPrice">-200.00</string>
+    <string name="change">CHANGE: </string>
+    <string name="changeAmount">-71.00</string>
+    <string name="thanksFooter"><![CDATA[Thanks & Visit Again]]></string>
 </resources>

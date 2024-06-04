@@ -7,4 +7,7 @@ class FirestoreHelper {
         val fireDatabase = FirebaseFirestore.getInstance()
 
     }
+    fun isNew():Boolean{
+        return true
+    }
 }
